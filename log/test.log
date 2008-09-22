@@ -1,0 +1,6 @@
+
+
+Processing HomeController#index (for 0.0.0.0 at 2008-09-07 20:27:02) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "extra_stuff"=>"the_stuff", "controller"=>"home"}
+Rendering home/index

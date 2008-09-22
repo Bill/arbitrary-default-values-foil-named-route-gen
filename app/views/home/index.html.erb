@@ -1,0 +1,25 @@
+<!-- Route recognition works (in the presence of :extra_stuff)      -->
+<!-- otherwise we wouldn't be trying to render this template        -->
+<!-- named routes work natch' -->
+<% url_generator = 'somewhere_with_same_extra_stuff_url' %>
+<p><%= url_generator%> is   <%=
+h( eval( url_generator) )%></p>
+<!-- once :extra_stuff is set in recognition, we can match          -->
+<!-- routes with same :extra_stuff without explicitly specifying it -->
+<% url_generator = "url_for( :controller=>'home', 
+      :action => 'somewhere_with_same_extra_stuff')"%>
+<p><%= url_generator%> is   <%=
+h( eval( url_generator) )%></p>
+<!-- fully-qualifying the options enables us to                     -->
+<!-- find routes with different :extra_stuff                        -->
+<% url_generator = "url_for( :controller=>'home', 
+      :action => 'somewhere_with_different_extra_stuff', 
+      :extra_stuff => 'different_stuff')"%>
+<p><%= url_generator%> is   <%=
+h( eval( url_generator) )%></p>
+<!-- but failing to specify :extra_stuff results in no matches for  -->
+<!-- :extra_stuff different from value set in recognition           -->
+<% url_generator = "url_for( :controller=>'home', 
+      :action => 'somewhere_with_different_extra_stuff')"%>
+<p><%= url_generator%> is   <%=
+h( eval( url_generator) )%></p>
