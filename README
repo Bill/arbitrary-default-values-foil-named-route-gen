@@ -26,3 +26,7 @@ And you'll see the failure. Important files are:
 /test/functional/home_test.rb
 
 The first test demonstrates the workaround (of explicitly specifying the "arbitrary" default values to the generate call) and the second test demonstrated the failure.
+
+Filed as Rails ticket #1092:
+
+http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/1092-setting-arbitrary-default-value-on-route-foils-named-route-generation
