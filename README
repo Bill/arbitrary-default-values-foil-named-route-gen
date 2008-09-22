@@ -29,4 +29,4 @@ The first test demonstrates the workaround (of explicitly specifying the "arbitr
 
 Filed as Rails ticket #1092:
 
-http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/1092-setting-arbitrary-default-value-on-route-foils-named-route-generation
+http://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/1092
